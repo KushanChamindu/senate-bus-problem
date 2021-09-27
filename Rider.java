@@ -21,13 +21,13 @@ class Rider extends Thread {
         try {
             this.multiplex.acquire();
             this.mutex.acquire();
-            SemaphoreDemo.riders += 1;
+            SenateBusProbDemo.riders += 1;
             this.mutex.release();
             this.bus.acquire();
             this.multiplex.release();
             this.boardBus();
-            SemaphoreDemo.riders -= 1;
-            if (SemaphoreDemo.riders == 0) {
+            SenateBusProbDemo.riders -= 1;
+            if (SenateBusProbDemo.riders == 0) {
                 this.allAboard.release();
             } else {
                 this.bus.release();

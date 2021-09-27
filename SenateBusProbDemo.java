@@ -1,7 +1,7 @@
 // import java.util.concurrent.*;
 
 // Driver class
-public class SemaphoreDemo {
+public class SenateBusProbDemo {
     public static int riders;
     public static void main(String args[]) throws InterruptedException {
         riders = 0;

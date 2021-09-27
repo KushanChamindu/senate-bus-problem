@@ -11,9 +11,9 @@
         1. jdk 1.8 or higher
 
     step1: Go to the project's root directory and Compile the java program
-        javac -d temp  src/senatebusridersproblem/*.java
+        javac -d .\compiled_files\ .\*.java
     step2: Execute the program
-        java -cp temp  senatebusridersproblem.SenateBusRiders
+        java -cp .\compiled_files\ SenateBusProbDemo  
 
 
-github repository: https://github.com/Malintha1996/senate-bus-riders
+github repository: https://github.com/KushanChamindu/senate-bus-problem.git
