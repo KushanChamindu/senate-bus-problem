@@ -11,3 +11,15 @@ bus arrives when there are no riders, it should depart immediately.
 
 * This codes for the CS4532 - Concurrent Programming Lab 2
 
+**Compile Program:**
+
+`javac -d .\classes SenateBusProblemDemo.java`
+
+**Run program:**
+
+`java -cp .\classes SenateBusProblemDemo`
+
+## Output
+
+![image_1](./screenshots/image_1.png)
+![image_2](./screenshots/image_2.png)
