@@ -6,8 +6,8 @@ public class SenateBusProbDemo {
     public static void main(String args[]) throws InterruptedException {
         riders = 0;
         
-        float bus_inter_arrival_time =  20 * 1000;
-        float riders_inter_arrival_time = 2 * 1000;
+        float bus_inter_arrival_time =  20 * 60 * 1000;
+        float riders_inter_arrival_time = 30 * 1000;
 
         RiderGenerator riderGenerator = new RiderGenerator(riders_inter_arrival_time);
         BusGenerator busGenerator = new BusGenerator(bus_inter_arrival_time);
