@@ -17,13 +17,13 @@ public class RiderGenerator extends Thread {
         while (!Thread.currentThread().isInterrupted()) {
             
             try {
-                float next_rider_time = getArrivalTime();
+                long next_rider_time = getArrivalTime();
                 System.out.println("Rider - "+riderIndex+ " arrived ----------next rider will arrive after "+ next_rider_time+ "miliseconds");
                 Rider rider = new Rider(SemaphoreStore.mutex, SemaphoreStore.bus, SemaphoreStore.allAboard,SemaphoreStore.multiplex, "Rider_"+String.valueOf(riderIndex));
                 rider.start();
 
                 riderIndex++;
-                Thread.sleep(getArrivalTime());
+                Thread.sleep(next_rider_time);
 
             } catch (InterruptedException e) {
                 e.printStackTrace();

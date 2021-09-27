@@ -38,6 +38,6 @@ class Rider extends Thread {
     }
 
     public void boardBus() {
-        System.out.println("Board Bus " + thread_name + "...............");
+        System.out.println("Board Bus " + thread_name + " !!");
     }
 }

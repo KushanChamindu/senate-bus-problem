@@ -18,7 +18,7 @@ public class BusGenerator extends Thread {
             
 
             try {
-                float next_depart_time = getBusInterArrivalTime();
+                long next_depart_time = getBusInterArrivalTime();
                 System.out.println("Bus - "+busIndex+ " arrived ----------next bus will depart after "+ next_depart_time+ "miliseconds");
                 Bus bus = new Bus(SemaphoreStore.mutex, SemaphoreStore.bus, SemaphoreStore.allAboard, "Bus_"+String.valueOf(busIndex));
                 bus.start();
