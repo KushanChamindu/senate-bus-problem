@@ -21,5 +21,5 @@ bus arrives when there are no riders, it should depart immediately.
 
 ## Output
 
-![image_1](./screenshots/image_1.png)
-![image_2](./screenshots/image_2.png)
+![image_1](./output_screenshots/image_1.png)
+![image_2](./output_screenshots/image_2.png)
